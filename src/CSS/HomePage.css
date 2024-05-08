@@ -1,0 +1,352 @@
+main{
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    max-width: 100%;
+    height: 100%;
+    padding: 5% 24%;
+}
+section.dark{
+    max-width: 100%;
+    height: 100%;
+    padding: 5% 24%;
+    filter: blur(3.5px);
+}
+section .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+}
+.card .card-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card .card-header .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+
+}
+
+.left span{
+    font-size: clamp(21px,2.8vw,60px);
+    font-weight: 600;
+    color: rgb(32,32,43);
+}
+.left p{
+    color: rgb(100,100,100);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.card .card-header .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+    position: relative;
+    right: 20%;
+}
+
+.card .card-header .right button{
+    padding: 12px 16px;
+    outline: none;
+    appearance: none;
+    border: 1px solid rgb(32,32,43);
+    border-radius: 16px;
+    transition: 0.4s all ease;
+    font-size: 16px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 40px;
+    max-width: 200px;
+    position: relative;
+    left: -120px;
+    cursor: pointer;
+    min-width: 130px;
+
+}
+.card .card-header .right button:nth-child(1){
+    padding: 12px 16px;
+    outline: none;
+    appearance: none;
+    border: 1.4px solid rgb(32,32,43);
+    border-radius: 16px;
+    transition: 0.4s all ease;
+    font-size: 13px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 40px;
+    max-width: 200px;
+    border-color: rgb(100,100,100);
+    color: rgb(146, 5, 189);
+    font-weight: 600;
+    margin-right: 12px;
+
+
+}
+.card .card-header .right button i{
+    margin-right: 12px;
+    scale: 1.1;
+}
+
+.card .card-header .right button:nth-child(2){
+    padding: 12px 16px;
+    outline: none;
+    appearance: none;
+    border: 1.4px solid rgb(32,32,43);
+    border-radius: 16px;
+    transition: 0.4s all ease;
+    font-size: 13px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 40px;
+    max-width: 200px;
+    border-color: rgb(146, 5, 189);
+    background-color: rgb(146, 5, 189);
+    color: white;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-header .right button:hover{
+    background-color: rgb(32,32,43);
+    color: white;
+}
+
+.card .card-body{
+    margin-top: 7%;
+    width: 90%;
+    border-radius: 12px;
+    border: 1.8px solid rgb(120,120,120);
+    padding: 16px 30px;
+}
+.card-body .input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.card-body .input-group input:nth-child(1){
+    outline: none;
+    appearance: none;
+    border: 1.4px solid rgba(100,100,100,0.5);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+    width: 70%;
+    height: 25px;
+    
+    margin-right: 1%;
+}
+.card-body .input-group button{
+    outline: none;
+    appearance: none;
+    border: 1.4px solid rgb(32,32,43);
+    transition: 0.4s all ease;
+    font-size: 13px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-color: rgb(146, 5, 189);
+    background-color: rgb(146, 5, 189);
+    color: white;
+    font-weight: 600;
+}
+/* .card-body .input-group input:nth-child(2),.card-body .input-group input:nth-child(3){
+    outline: none;
+    appearance: none;
+    border: 1.4px solid rgba(100,100,100,0.5);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+    width: 30%;
+    height: 25px;
+    
+    margin-right: 2%;
+} */
+
+.card-body .input-group input:nth-child(4){
+    outline: none;
+    appearance: none;
+    border: 1.4px solid rgba(100,100,100,0.5);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+    width: 300%;
+    height: 25px;
+    
+    margin-right: 2%;
+}
+.card-footer{
+    margin-top: 3%;
+    width: 90%;
+    border-radius: 12px;
+    border: 1.8px solid rgb(120,120,120);
+    padding: 16px 30px;
+}
+.card-footer ul{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding: 12px 24px;
+}
+
+.card-footer ul li{
+    width: 100%;
+    height: 50px;
+    margin: 16px 0;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 4px 4px 3px rgba(145, 145, 145, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-footer ul li .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-footer ul li .middle{
+    display: flex;
+    align-items: center;
+    position:absolute;
+    left: 56.5%;
+}
+.card-footer ul li .middle .text{
+    margin-right: 12px;
+    font-size:13px;
+    font-weight: 600;
+
+}
+.card-footer ul li .left .left_1_1{
+    margin-right: 16px;
+    margin-left: 16px;
+    scale: 1.5;
+    color: rgb(237,188,69);
+}
+
+.card-footer ul li .left .left1_2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-footer ul li .left .left1_2 h5{
+    position: relative;
+    top: 10px;
+    color: rgba(56, 56, 56, 0.8);
+}
+.card-footer ul li .left .left1_2 .bottom{
+    display: flex;
+    align-items: center;
+    font-size: 2px;
+    position: relative;
+    bottom: 20px;
+}
+.card-footer ul li .left .left1_2 .bottom p{
+    font-size: 11px;
+}
+.card-footer ul li .right{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 2%;
+
+}
+
+.card-footer ul li .right i{
+    margin: 0 6px;
+    cursor: pointer;
+}
+.card-footer ul li .right i:hover{
+    scale: 1.1;
+}
+.card-footer ul li .right i:nth-child(1){
+    color: rgb(237,188,69);
+}
+.card-footer ul li .right i:nth-child(2){
+    color: rgb(233, 63, 29);
+}
+.fa-file{
+    color: rgb(114, 114, 114);
+}
+
+
+.confirm_pop_up{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 12px 13px rgb(100,100,100);
+    padding: 20px;
+    z-index: 1000000;
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 200px;
+    max-height: 200px;
+}
+.confirm_pop_up .top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.confirm_pop_up .top div:nth-child(1){
+    font-size: x-large;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.confirm_pop_up .bottom{
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.confirm_pop_up .bottom .left i{
+    scale: 3;
+
+}
+.confirm_pop_up .bottom span{
+    color: rgb(146, 5, 189) !important;
+}
+.max_size_info{
+    color: rgb(114, 114, 114);
+    font-weight: 600;
+    font-size:0.9em;
+    margin-top: -8px;
+}
+.upload_folder_btn{
+    color: rgb(237,188,69) !important;
+}
+.upload_folder_btn:hover{
+    background-color: rgb(237,188,69) !important;
+    color: whitesmoke !important;
+}
